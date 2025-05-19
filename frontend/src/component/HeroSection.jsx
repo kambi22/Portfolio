@@ -39,7 +39,7 @@ export const HeroSection = (props) => {
             animate={{
               y: [0, -10, 0],
             }}
-            className="rounded-full shadow-lg shadow-blue-500/50 p-2   m-auto max-w-md min-w-20 bg-white "
+            className="rounded-full shadow-lg shadow-blue-500/50 p-2   m-auto max-w-md min-w-xs bg-white "
             transition={{
               duration: 2,
               repeat: Infinity,
@@ -63,8 +63,8 @@ export const HeroSection = (props) => {
             className="text-2xl sm:text-4xl font-bold text-white "
           /><br />
           <motion.a
-            href="/resume.pdf"
-            download="Satnam_Singh_Resume.pdf"
+            href="/Satnam_Singh_resume.pdf"
+            download="Satnam_singh_resume.pdf"
             className="mx-auto sm:ml-2 text-white mt-3 cursor-pointer text-center rounded-2xl p-3 w-40 border-3 border-l-0
              border-r-0 border-b-blue-400 border-t-blue-400 relative block bg-gradient-to-r from-transparent via-cyan-500/50"
          
