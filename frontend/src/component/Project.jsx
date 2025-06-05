@@ -46,7 +46,7 @@ export const Projects = (props) => {
       title: 'Architech Solutions',
       description: "Developed a scalable and secure architect portfolio, enabling architects to showcase projects.",
       technologies: [{name:'ReactJs', key:'react'},{name:'NodeJs', key:'node'},{name:'MongoDB', key:'mongodb'}],
-      image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/architect.png?alt=media&token=853a190a-9636-40d0-b4ac-b3b4dc30319b',
+      image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/Bambrah%20Creation%2Fbambrah.png?alt=media&token=e43407ea-dbcd-4519-bdab-7aa2df57cac4',
       live: 'https://itsbambrahcreation.vercel.app/',
       code: 'https://github.com/kambi22/ArchitectPortfolio'
     },
