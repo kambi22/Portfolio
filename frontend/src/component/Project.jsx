@@ -56,7 +56,7 @@ export const Projects = (props) => {
       description: "Developed a system allowing users to mint NFTs uniquely associated with the owner's address and a unique token ID.",
       technologies: [{name:'ReactJs', key:'react'},{name:'Ethereum', key:'ethereum'},{name:'Web3.Js', key:'web3'}],
       image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/marketplace.png?alt=media&token=0f3cf3a5-50d1-4dd3-a5d0-4fc8b5c07743',
-      live: 'https://github.com/kambi22/NFTMarketPlace',
+      live: 'https://nftsmarketplace-2233.web.app',
       code: 'https://github.com/kambi22/NFTMarketPlace'
     },
     {
