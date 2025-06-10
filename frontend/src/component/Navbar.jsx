@@ -13,7 +13,7 @@ export const Header = (props) => {
   const handleSidebar = () => {
     setSidebarOpen(!sidebarOpen)
   }
-  const MotionContainer = motion.create(Container);
+
 
   return (
     <div className="pt-10 ms-2 pe-2">
@@ -21,25 +21,28 @@ export const Header = (props) => {
         open={sidebarOpen}
         onClose={handleSidebar}
       />
-      <MotionContainer className="flex text-white bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-lg " >
 
-        <div className="absolute inset-0 rounded-xl p-[1px] overflow-hidden">
+      <Container className="flex text-white bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-lg " >
+
+        <div className="absolute inset-0 rounded-xl p-[1px] overflow-hidden pointer-events-none">
           <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent"
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent pointer-events-none"
             initial={{ x: "-100%" }}
             animate={{ x: "100%" }}
             transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
           />
         </div>
 
-        <div className="mt-2 flex">
-          <img src={Slogo} alt="S logo" style={{ height: '30px', width: '25px' }} />
 
-          <motion.p
-            className="text-2xl ms-1"
-            transition={{ duration: 1 }}
-            whileHover={{ scale: 1.1 }}
-          >Satnam</motion.p>
+        <div className="mt-2 flex">
+          <img src={Slogo} alt="S logo"
+            className="hover:rotate-180 transition-all duration-400 ease-in-out"
+            style={{ height: '30px', width: '25px', pointerEvents: 'auto', cursor:'pointer'}} />
+
+          <p
+            className="text-2xl ms-1 hover:-translate-y-2.5 transition-all duration-300 ease-in-out"
+            style={{ pointerEvents: 'auto', cursor:'pointer' }}
+          >Satnam</p>
 
         </div>
 
@@ -61,26 +64,44 @@ export const Header = (props) => {
 
 
         <nav className="gap-5 mt-2 text-white ms-auto font-bold hidden md:flex">
-          <motion.div whileHover={{ rotate: [0, -10, 10, 0] }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.5 }} className="cursor-pointer">
+
+          <a
+            href="https://www.linkedin.com/in/satnam-singh-2771a4316/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 z-50 relative hover:-translate-y-2.5 transition-all duration-300 ease-in-out "
+            style={{ pointerEvents: 'auto' }}
+          >
             <FaLinkedin size={20} />
-          </motion.div>
-
-
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="cursor-pointer">
+          </a>
+          <a
+            href="https://github.com/kambi22"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 z-50 relative hover:-translate-y-2.5 transition-all duration-300 ease-in-out"
+            style={{ pointerEvents: 'auto' }}
+          >
             <FaGithub size={20} />
-          </motion.div>
+          </a>
+          <a
+            href="mailto:satnamkot8@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 z-50 relative hover:-translate-y-2.5 transition-all duration-300 ease-in-out"
+            style={{ pointerEvents: 'auto' }}
+          >
+            <MdEmail size={20} />
+          </a>
 
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="cursor-pointer">
-            <MdEmail size={22} />
-          </motion.div>
+
         </nav>
         <div className="ms-auto block sm:hidden p-0">
-          <IconButton className="cursor-pointer p-0" onClick={()=>setSidebarOpen(!sidebarOpen)}>
+          <IconButton className="cursor-pointer p-0" onClick={() => setSidebarOpen(!sidebarOpen)}>
             <MdOutlineMenuOpen size={30} color="white" />
           </IconButton>
         </div>
 
-      </MotionContainer>
+      </Container>
 
     </div>
   )

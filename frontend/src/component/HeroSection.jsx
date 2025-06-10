@@ -62,18 +62,25 @@ export const HeroSection = (props) => {
             repeat={Infinity}
             className="text-2xl sm:text-4xl font-bold text-white "
           /><br />
-          <motion.a
-            href="/Satnam_Singh_resume.pdf"
-            download="Satnam_singh_resume.pdf"
-            className="mx-auto sm:ml-2 text-white mt-3 cursor-pointer text-center rounded-2xl p-3 w-40 border-3 border-l-0
+          <motion.span
+          className="mx-auto sm:ml-2 text-white mt-3 cursor-pointer text-center rounded-2xl p-3 w-40 border-3 border-l-0
              border-r-0 border-b-blue-400 border-t-blue-400 relative block bg-gradient-to-r from-transparent via-cyan-500/50"
          
-            whileTap={{ scale: 0.8 }}
+            whileTap={{ scale: 0.5 }}
+      
             transition={{ duration: 1, ease: 'linear' }}
+            >
+<a
+            // href="/resume.pdf"
+            href="/Satnam_full-stack-resume.pdf"
+            download="satnam_full-stack-resume.pdf"
+            
           >
             My Resume
-          </motion.a>
+          </a>
 
+          </motion.span>
+          
 
 
         </Grid>

@@ -46,16 +46,17 @@ export const Projects = (props) => {
       title: 'Architech Solutions',
       description: "Developed a scalable and secure architect portfolio, enabling architects to showcase projects.",
       technologies: [{name:'ReactJs', key:'react'},{name:'NodeJs', key:'node'},{name:'MongoDB', key:'mongodb'}],
-      image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/architect.png?alt=media&token=853a190a-9636-40d0-b4ac-b3b4dc30319b',
+      image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/Bambrah%20Creation%2Fbambrah.png?alt=media&token=e43407ea-dbcd-4519-bdab-7aa2df57cac4',
       live: 'https://itsbambrahcreation.vercel.app/',
       code: 'https://github.com/kambi22/ArchitectPortfolio'
     },
+    
     {
       title: 'Nfts Marketplace',
       description: "Developed a system allowing users to mint NFTs uniquely associated with the owner's address and a unique token ID.",
       technologies: [{name:'ReactJs', key:'react'},{name:'Ethereum', key:'ethereum'},{name:'Web3.Js', key:'web3'}],
       image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/marketplace.png?alt=media&token=0f3cf3a5-50d1-4dd3-a5d0-4fc8b5c07743',
-      live: 'https://github.com/kambi22/NFTMarketPlace',
+      live: 'https://nftsmarketplace-2233.web.app',
       code: 'https://github.com/kambi22/NFTMarketPlace'
     },
     {
@@ -64,7 +65,7 @@ export const Projects = (props) => {
       technologies: [{name:'ReactJs', key:'react'},{name:'NodeJs', key:'node'},{name:'Firebase', key:'firebase'}],
       image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/Quora.png?alt=media&token=143de12e-57aa-4972-9a37-34cb7fb18f95',
       live: 'https://quora-4666c.web.app/',
-      code: 'https://github.com/kambi22'
+      code: 'https://github.com/kambi22/QuoraClone'
     }
   ]
   const skills = projects.title
