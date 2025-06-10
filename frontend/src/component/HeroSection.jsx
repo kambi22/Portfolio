@@ -35,7 +35,7 @@ export const HeroSection = (props) => {
 
         <Grid className='h-fit w-full p-1  content-center ' size={{ xl: 6, md: 6, sm: 12, xs: 12 }}>
           <motion.div
-         
+
             animate={{
               y: [0, -10, 0],
             }}
@@ -63,24 +63,29 @@ export const HeroSection = (props) => {
             className="text-2xl sm:text-4xl font-bold text-white "
           /><br />
           <motion.span
-          className="mx-auto sm:ml-2 text-white mt-3 cursor-pointer text-center rounded-2xl p-3 w-40 border-3 border-l-0
+            className="mx-auto sm:ml-2 text-white mt-3 cursor-pointer text-center rounded-2xl p-3 w-40 border-3 border-l-0
              border-r-0 border-b-blue-400 border-t-blue-400 relative block bg-gradient-to-r from-transparent via-cyan-500/50"
-         
+
             whileTap={{ scale: 0.5 }}
-      
+
             transition={{ duration: 1, ease: 'linear' }}
-            >
-<a
-            // href="/resume.pdf"
-            href="/Satnam_full-stack-resume.pdf"
-            download="satnam_full-stack-resume.pdf"
-            
           >
-            My Resume
-          </a>
+
+            <a
+              // href="/resume.pdf"
+              href="/Satnam_full-stack-resume.pdf"
+              download="satnam_full-stack-resume.pdf"
+
+            >
+              My Resume
+            </a>
+
 
           </motion.span>
-          
+
+
+
+
 
 
         </Grid>
