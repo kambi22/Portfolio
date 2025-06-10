@@ -7,36 +7,36 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      strategies: 'injectManifest',
-      srcDir: 'src',
-      filename: 'sw.js', // Output file name
-      injectManifest: {
-        swSrc: 'src/sw.js',  // Your custom service worker file
-        swDest: 'sw.js',      // Output destination file (should NOT be the same file)
-      },
+    VitePWA(
+      {
+      registerType: 'autoUpdate', // Auto-update service worker
       manifest: {
-        name: 'Satnam Singh',
+        name: `Satnam Singh`,
         short_name: 'Satnam',
-        start_url: '/',
-        display: 'standalone',
+        description: `Hi, I'm satnam singh, welcome to my portfolio`,
+        theme_color: '#ffffff',
         background_color: '#ffffff',
-        theme_color: '#000000',
+        display: 'standalone', // Fullscreen PWA
         icons: [
           {
-            src: '/icon-192x192.png',
+            src: '/android-chrome-192x192.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
-            src: '/icon-512x512.png',
+            src: '/android-chrome-512x512.png',
             sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
-      }
-    })
+            type: 'image/png',
+          },
+        ],
+      },
+    }),
+    {
+      strategies: 'injectManifest', // Use custom SW
+      srcDir: 'src',
+      filename: 'sw.js',
+      // ... rest of config
+    }
   ],
   server: {
     host: true
