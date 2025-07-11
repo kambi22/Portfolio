@@ -73,8 +73,8 @@ export const HeroSection = (props) => {
 
             <a
               // href="/resume.pdf"
-              href="/Satnam_full-stack-resume.pdf"
-              download="satnam_full-stack-resume.pdf"
+              href="/Satnam_Full-Stack_Resume.pdf"
+              download="Satnam_Full-Stack_Resume.pdf"
 
             >
               My Resume

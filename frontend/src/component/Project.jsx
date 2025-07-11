@@ -50,15 +50,16 @@ export const Projects = (props) => {
       live: 'https://itsbambrahcreation.vercel.app/',
       code: 'https://github.com/kambi22/ArchitectPortfolio'
     },
-    
     {
-      title: 'Nfts Marketplace',
-      description: "Developed a system allowing users to mint NFTs uniquely associated with the owner's address and a unique token ID.",
-      technologies: [{name:'ReactJs', key:'react'},{name:'Ethereum', key:'ethereum'},{name:'Web3.Js', key:'web3'}],
-      image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/marketplace.png?alt=media&token=0f3cf3a5-50d1-4dd3-a5d0-4fc8b5c07743',
-      live: 'https://nftsmarketplace-2233.web.app',
-      code: 'https://github.com/kambi22/NFTMarketPlace'
+      title: 'Shopy E-commerce',
+      description: "Developed a scalable and secure e-commerce platform, enabling users to browse and purchase products.",
+      technologies: [{name:'ReactJs', key:'react'},{name:'NodeJs', key:'node'},{name:'MongoDB', key:'mongodb'}],
+      image: 'https://res.cloudinary.com/dr5ziuzrg/image/upload/v1752213289/shopy_nrrgzi.png',
+      live: 'https://shopy-teal.vercel.app/',
+      code: 'https://github.com/kambi22/Shopy'
     },
+    
+  
     {
       title: 'Quora Clone',
       description: "Develop a Quora-style website where users can post content, ask questions, and provide answers to others’ queries.",
@@ -66,7 +67,8 @@ export const Projects = (props) => {
       image: 'https://firebasestorage.googleapis.com/v0/b/trusty-sentinel-397012.appspot.com/o/Quora.png?alt=media&token=143de12e-57aa-4972-9a37-34cb7fb18f95',
       live: 'https://quora-4666c.web.app/',
       code: 'https://github.com/kambi22/QuoraClone'
-    }
+    },
+  
   ]
   const skills = projects.title
   console.log('skills are:',skills)
